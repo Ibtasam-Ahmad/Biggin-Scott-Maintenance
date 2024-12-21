@@ -25,7 +25,7 @@ def chat_with_bot(api_key, system_prompt, user_message, chat_history=None):
     openai.api_key = api_key
     response = openai.ChatCompletion.create(
         model="gpt-4o",  # Change to "gpt-4" if you want,
-temperature=0.6,
+temperature=0.3,
         messages=messages
     )
     
